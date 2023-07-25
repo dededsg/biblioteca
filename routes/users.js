@@ -11,4 +11,14 @@ router.get('/cool', function(req, res, next) {
   res.render('index', { title: "You're so cool" });
 });
 
+/* GET home page. */
+router.get('/ifc', function(req, res, next) {
+  res.render('index', { title: "Bem vindo ao IFC" });
+});
+
+/* GET home page. */
+router.get('/cool/beach', function(req, res, next) {
+  res.send("Adoro praia");
+});
+
 module.exports = router;

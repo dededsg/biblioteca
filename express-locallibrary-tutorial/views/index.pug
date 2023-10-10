@@ -2,6 +2,15 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  p joedio_bacana.png
-  
+  p Bem-vindo a biblioteca do IFC.
+
+  h1 Registro do acervo
+
+  p A biblioteca possui em seu acervo:
+
+  ul
+    li #[strong Livros:] !{book_count}
+    li #[strong Cópias:] !{book_instance_count}
+    li #[strong Cópias disponíveis:] !{book_instance_available_count}
+    li #[strong Autoras:] !{author_count}
+    li #[strong Gêneros:] !{genre_count}
